@@ -8,7 +8,7 @@ ARG KEY="-----BEGIN OPENSSH PRIVATE -----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnN
 ENV DEFAULT_LIST_FILE=crontab_list.sh \
     CUSTOM_LIST_MERGE_TYPE=append \
     COOKIES_LIST=/scripts/logs/cookies.list \
-    REPO_URL=https://github.com/chill-lee/jd_scripts.git \
+    REPO_URL=git@github.com:chill-lee/jd_scripts.git \
     REPO_BRANCH=master
 
 RUN set -ex \
