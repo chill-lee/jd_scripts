@@ -22,8 +22,8 @@ RUN set -ex \
     && mkdir -p /root/.ssh \
     && echo -e $KEY > /root/.ssh/id_rsa \
     && chmod 600 /root/.ssh/id_rsa \
-	&& echo -e $PUBLICKEY > /root/.ssh/id_rsa.pub \
-	&& chmod 600 /root/.ssh/id_rsa.pub \
+    && echo -e $PUBLICKEY > /root/.ssh/id_rsa.pub \
+    && chmod 600 /root/.ssh/id_rsa.pub \
     && ssh-keyscan github.com > /root/.ssh/known_hosts \
     && git clone -b $REPO_BRANCH $REPO_URL /scripts \
     && cd /scripts \
